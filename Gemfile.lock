@@ -148,7 +148,7 @@ DEPENDENCIES
   pry-rails
   puma
   rails (= 4.0.0)
-  rails-backbone (~> 0.9.10)
+  rails-backbone
   sass-rails (~> 4.0.0)
   sdoc
   slim
