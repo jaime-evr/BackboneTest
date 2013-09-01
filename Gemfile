@@ -6,26 +6,20 @@ gem 'rails', '4.0.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
-
 # HTML template processor 
 gem 'slim'
 
-# javascript framework
-gem "rails-backbone", "~> 0.9.10"
-
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+group :assets do
+  gem 'sass-rails', '~> 4.0.0'
+  gem "rails-backbone", "~> 0.9.10"
+  gem 'uglifier', '>= 1.3.0'
+  gem 'coffee-rails', '~> 4.0.0'	
+end
 
 group :development do
   gem 'better_errors'
   gem 'meta_request'
   gem 'pry-rails'
-  gem 'foreman'
 end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -48,8 +42,8 @@ end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
-# Use unicorn as the app server
-# gem 'unicorn'
+# Use puma as the app server
+gem 'puma'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
