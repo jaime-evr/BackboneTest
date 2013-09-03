@@ -9,3 +9,9 @@ window.BackboneTest =
   Collections: {}
   Routers: {}
   Views: {}
+  init: ->
+    new BackboneTest.Routers.EntriesRouter()
+    Backbone.history.start()
+
+$(document).ready ->
+  BackboneTest.init()

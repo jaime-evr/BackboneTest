@@ -3,4 +3,4 @@ class BackboneTest.Models.Entry extends Backbone.Model
 
 class BackboneTest.Collections.EntriesCollection extends Backbone.Collection
   model: BackboneTest.Models.Entry
-  url: '/entries'
+  url: ''

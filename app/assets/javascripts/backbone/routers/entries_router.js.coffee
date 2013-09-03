@@ -1,14 +1,14 @@
 class BackboneTest.Routers.EntriesRouter extends Backbone.Router
   initialize: (options) ->
     @entries = new BackboneTest.Collections.EntriesCollection()
-    @entries.reset options.entries
+    #@entries.reset options.entries
 
   routes:
     "new"      : "newEntry"
-    "index"    : "index"
+    ""         : "index"
     ":id/edit" : "edit"
     ":id"      : "show"
-    ".*"        : "index"
+    ".*"       : "index"
 
   newEntry: ->
     @view = new BackboneTest.Views.Entries.NewView(collection: @entries)
